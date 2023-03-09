@@ -2,7 +2,7 @@
 
 ## Perguntas / Questions
 
-### Problema *2.1*
+### Problema 2.1
 
 Considere um Sistema de Gestão de Stocks de uma empresa. O presente exercício propõe-se modelar a parte das encomendas desse sistema de informação segundo as seguintes premissas: 
 * A empresa comercializa vários produtos que são caracterizados por um código, nome, preço e taxa de IVA; 
@@ -46,7 +46,7 @@ ___
 
 ___
 
-### Problema *2.2*
+### Problema 2.2
 
 Considere um Sistema de Prescrição Eletrónica de Medicamentos com as seguintes características: 
 
