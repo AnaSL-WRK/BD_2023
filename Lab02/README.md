@@ -1,8 +1,5 @@
 # BD: Guião 2
 
-## Template para respostas ao guião da aula 2.
-Template for submission of answers to "aula 2" guide.
-
 ## Perguntas / Questions
 
 ### Problema *2.1*
@@ -13,28 +10,41 @@ Considere um Sistema de Gestão de Stocks de uma empresa. O presente exercício 
 * Uma encomenda é caracterizada pelo número de encomenda, a data em que foi realizada e um fornecedor único. Uma encomenda contém um ou mais itens (i.e. produtos) e respetivas unidades; 
 * Cada fornecedor é caracterizado por um nome, número de informação fiscal, endereço, número de fax, condições de pagamento (pronto, 30 dias, 60 dias, etc) e um código interno do tipo de fornecedor (ao qual está, por sua vez, associada uma designação); 
 
+___
 #### *a)* Identifique as entidades, atributos e relações da base de dados.
-Identify the entities, attributes, and relationships of the database.
-
-```
-	Entidades:  Fornecedor; Encomenda;Produto 
-    Atributos: Fornecedor tem nome, NIF, endereço, fax, condições de pagamento,     	       código interno de fornecedor e designação; Encomenda tem número, data ,itens,unidades;  Produto tem codigo, nome, preço, IVA, número de itens em armazém 
- 	Relações: Fornecedor fornece encomenda, encomenda é composta por 1 ou mais produtos 
 
 
-```
+**Entidades:** Fornecedor;  Encomenda; Produto  
 
+**Atributos:**
+-  <ins>Fornecedor</ins> tem nome, NIF, endereço, fax, condições de pagamento, código interno de fornecedor e designação;  
+-  <ins>Encomenda</ins> tem número, data, itens, unidades;  
+-  <ins>Produto</ins> tem codigo, nome, preço, IVA, número de itens em armazém   
+  
+**Relações:**  Fornecedor fornece encomenda, encomenda é composta por 1 ou mais produtos.
+
+
+<br>
+
+___
 #### *b)* Caracterize as relações quanto ao grau, cardinalidade e obrigatoriedade de participação das instâncias das entidades no relacionamento.
-Specify the relationships regarding the degree, cardinality and instances mandatory participation of the entities in the relationship.
 
-```
-b)	Relações todas binárias, Relação Fornecedor-Encomenda 1:1  obrigatória em ambas as entidades, Relação Encomenda-Produto 1:N obrigatória em ambas as entidades 
 
-```
+Relações todas binárias  
+- Relação Fornecedor-Encomenda 1:1 obrigatória em ambas as entidades  
+- Relação Encomenda-Produto 1:N obrigatória em ambas as entidades 
 
+<br>
+
+
+___
 #### *c)* Desenvolva o desenho conceptual da base de dados com recurso a um diagrama entidade-relacionamento. Numa primeira fase, utilize lápis e papel para realizar o trabalho. Uma vez concluído o desenho em papel, transponha o diagrama para um formato eletrónico utilizando uma ferramenta gráfica como, por exemplo, o Microsoft Visio ou o Visual Paradigm.
 
-![ex_2_1!](ex_2_1.pdf "AnImage or PDF file")
+[Diagrama problema 2.1](ex_2_1.pdf)
+
+<br>
+
+___
 
 ### Problema *2.2*
 
@@ -49,9 +59,15 @@ Considere um Sistema de Prescrição Eletrónica de Medicamentos com as seguinte
 * Pretendemos guardar a data em que uma prescrição foi processada na farmácia. No entanto, há situações em que os pacientes não fazem uso da prescrição; 
 * Uma farmácia é caracterizada por um nif, nome, endereço e telefone. 
 
+<br>
+
 #### *a)* Desenvolva o desenho conceptual da base de dados do Sistema de Prescrição Eletrónica de Medicamentos com recurso a um diagrama entidade-relacionamento.
 
-![ex_2_2!](ex_2_2.pdf "AnImage or PDF file")
+[Diagrama problema 2.2](ex_2_2.pdf)
+
+<br>
+
+___
 
 ### Problema 2.3
 
@@ -65,10 +81,15 @@ Considere um Sistema de Gestão de Conferências com as seguintes característic
 * Os participantes estudantes necessitam de um comprovativo emitido pela instituição de ensino para estarem isentos do custo da inscrição. O sistema de informação deve registar a localização eletrónica do referido comprovativo; 
 * Para os participantes não estudantes é necessário registar a referência da transação bancária que suportou o valor da inscrição.  
 
+<br>
 
 #### *a)* Desenvolva o desenho conceptual da base de dados do Sistema de Gestão de Conferências com recurso a um diagrama entidade-relascionamento.
 
-![ex_2_3!](ex_2_3.pdf "AnImage or PDF file")
+[Diagrama problema 2.3](ex_2_3.pdf)
+
+<br>
+
+___
 
 ### Problema 2.4
 
@@ -81,11 +102,10 @@ Considere um Sistema de Gestão de um ATL com as seguintes características:
 * Um aluno tem um encarregado de educação caracterizado por nome, número de cartão de cidadão, morada, data de nascimento, contacto telefónico, email e uma relação com o aluno (pai, mãe, avô, avó, etc); 
 * Existe uma lista de pessoas com autorização para entregar ou levantar o aluno. Estas pessoas têm um tipo de registo similar ao encarregado de educação. 
 
+<br>
+
 #### *a)* Desenvolva o desenho conceptual da base de dados do Sistema de Informação da Universidade com recurso a um diagrama entidade-relacionamento.
 
-![ex_2_4a!](ex_2_4.pdf "AnImage or PDF file")
+[Diagrama problema 2.1](ex_2_1.pdf)
 
-### *b)* [Opcional] Continue a modelar o problema de forma a registar os processos financeiros (mensalidades, atividades, pagamentos, desconto família, etc). Defina os requisitos livremente.
-
-![ex_2_4b!](ex_2_4b.png "AnImage or PDF file")
-    
+<br>
