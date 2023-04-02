@@ -1,0 +1,63 @@
+USE MASTER
+GO
+--ALTER DATABASE Stocks SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+--DROP DATABASE Stocks
+--GO
+CREATE DATABASE Stocks
+GO
+USE Stocks
+
+
+CREATE TABLE PRODUTO (
+	codigo					INT				NOT NULL		PRIMARY KEY,
+	nome					VARCHAR(25)		NOT NULL,
+	preco					DECIMAL(10,2)	NOT NULL,
+	quantidadeProduto				INT		NOT NULL,
+	codigo_armazem			INT				NOT NULL,
+	IVA						INT				NOT NULL,
+	
+);
+
+CREATE TABLE TIPO_FORNECEDOR(
+	designacao		VARCHAR(25),
+	codigo_interno	INT			NOT NULL	PRIMARY KEY,
+);
+
+CREATE TABLE FORNECEDOR (
+	NIF						CHAR(9)			NOT NULL		PRIMARY KEY,
+	endereco				VARCHAR(35),
+	nome					VARCHAR(35)		NOT NULL,
+	FAX						CHAR(9),
+	condicao_pagamento		VARCHAR(25)		NOT NULL,
+	codigo_TipoFornecedor	INT				FOREIGN KEY REFERENCES TIPO_FORNECEDOR(codigo_interno),
+);
+
+CREATE TABLE ARMAZEM (
+	codigo		INT				NOT NULL		FOREIGN KEY REFERENCES PRODUTO(codigo) PRIMARY KEY,
+	nome		VARCHAR(25)		NOT NULL,
+	localizacao VARCHAR(25)		NOT NULL,
+);
+
+
+CREATE TABLE ENCOMENDA (
+	numero_encomenda		INT				NOT NULL		PRIMARY KEY,
+	data					DATE			NOT NULL,
+	NIF_fornecedor			CHAR(9)			NOT NULL	FOREIGN KEY REFERENCES FORNECEDOR(NIF),
+);
+
+CREATE TABLE CONTEM (
+	codigo_produto		INT				NOT NULL		FOREIGN KEY REFERENCES PRODUTO(codigo),
+	numero_encomenda	INT				NOT NULL		FOREIGN KEY REFERENCES ENCOMENDA(numero_encomenda),
+	quantidade			INT				NOT NULL,
+	preco				DECIMAL(10,2)	NOT NULL,
+
+PRIMARY KEY(codigo_produto, numero_encomenda)
+);
+
+
+
+
+CREATE TABLE CONDICOES_PAGAMENTO(
+	condicao_pagamento	VARCHAR(25)		NOT NULL,
+	NIF_Fornecedor		CHAR(9)			NOT NULL  FOREIGN KEY REFERENCES FORNECEDOR(NIF)	PRIMARY KEY,
+);
