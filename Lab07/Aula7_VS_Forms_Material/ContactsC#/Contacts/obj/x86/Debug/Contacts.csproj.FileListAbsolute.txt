@@ -1,0 +1,6 @@
+C:\Users\anawk\OneDrive - Universidade de Aveiro\Uni\3.ano\BD\BD_2023\Lab07\Aula7_VS_Forms_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.AssemblyReference.cache
+C:\Users\anawk\OneDrive - Universidade de Aveiro\Uni\3.ano\BD\BD_2023\Lab07\Aula7_VS_Forms_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.SuggestedBindingRedirects.cache
+C:\Users\anawk\OneDrive - Universidade de Aveiro\Uni\3.ano\BD\BD_2023\Lab07\Aula7_VS_Forms_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.Form1.resources
+C:\Users\anawk\OneDrive - Universidade de Aveiro\Uni\3.ano\BD\BD_2023\Lab07\Aula7_VS_Forms_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.Properties.Resources.resources
+C:\Users\anawk\OneDrive - Universidade de Aveiro\Uni\3.ano\BD\BD_2023\Lab07\Aula7_VS_Forms_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.GenerateResource.cache
+C:\Users\anawk\OneDrive - Universidade de Aveiro\Uni\3.ano\BD\BD_2023\Lab07\Aula7_VS_Forms_Material\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.CoreCompileInputs.cache
